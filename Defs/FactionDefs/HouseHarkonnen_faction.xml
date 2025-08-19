@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Abstract base faction for House Harkonnen -->
+
+  <FactionDef ParentName="OutlanderFactionBase" Name="HouseHarkonnenBase" Abstract="True">
+    <pawnSingular>Harkonnen soldier</pawnSingular>
+    <pawnsPlural>Harkonnen soldiers</pawnsPlural>
+    <categoryTag>Harkonnen</categoryTag>
+    <listOrderPriority>25</listOrderPriority>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+    <techLevel>Industrial</techLevel>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+    <naturalEnemy>true</naturalEnemy>
+    <basicMemberKind>PawnKind_HarkonnenBlacktrooper</basicMemberKind>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PawnKind_HarkonnenBlacktrooper>10</PawnKind_HarkonnenBlacktrooper>
+          <PawnKind_HarkonnenExecutioner>5</PawnKind_HarkonnenExecutioner>
+          <PawnKind_HarkonnenScout>3</PawnKind_HarkonnenScout>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <PawnKind_HarkonnenProbe>5</PawnKind_HarkonnenProbe>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- Concrete faction: House Harkonnen -->
+  <FactionDef ParentName="HouseHarkonnenBase">
+    <defName>HouseHarkonnen</defName>
+    <label>House Harkonnen</label>
+    <description>House Harkonnen is a ruthless faction known for their military prowess and relentless hostility toward outsiders.</description>
+    <colorSpectrum>
+      <li>(0.5, 0, 0)</li> <!-- Dark red -->
+      <li>(0.7, 0.2, 0.2)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+    <naturalEnemy>true</naturalEnemy>
+
+    <!-- Enables natural spawning in world gen -->
+    <canMakeRandomly>true</canMakeRandomly>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <hidden>false</hidden>
+
+    <!-- Settlement spawning support -->
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <allowedSettlementTypes>
+      <li>Base</li>
+      <li>Camp</li>
+    </allowedSettlementTypes>
+
+    <!-- Leader title -->
+    <leaderTitle>Baron</leaderTitle>
+
+  </FactionDef>
+
+</Defs>
+
+

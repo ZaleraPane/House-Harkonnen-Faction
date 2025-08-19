@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>House Harkonnen Faction</name>
+  <author>Zalera</author>
+  <packageId>Zalera.HouseHarkonnenFaction</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Collapse.DunesOfRim.Harkonnen</packageId>
+      <displayName>Dune - Harkonnen Armor and Weapons</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Dune: Harkonnen Armour &amp; Weapon Pack</li>
+  </loadAfter>
+  <description>
+    Adds the brutal and fearsome House Harkonnen from the Dune universe as a new faction in RimWorld.
+
+    This mod includes:
+    - A custom House Harkonnen faction with appropriate ideology and behavior
+    - Five unique Harkonnen warrior types, each wearing distinct armor from the Dune: Harkonnen Armor and Weapons mod
+    - Integration with custom weapons and apparel provided by the dependency mod
+
+    Requires: "Dune - Harkonnen Armor and Weapons" (Steam ID: 3441453108)
+
+    Created for RimWorld 1.6
+  </description>
+</ModMetaData>

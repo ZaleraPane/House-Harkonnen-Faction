@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Executioner: Elite Melee Warrior -->
+  <PawnKindDef>
+  <defName>PawnKind_HarkonnenExecutioner</defName>
+  <label>Executioner Warrior</label>
+  <race>Human</race>
+  <combatPower>250</combatPower>
+  <apparelRequired>
+    <li>PD_Apparel_BaronShirt</li>
+    <li>PD_Apparel_ExecutionerArmor</li>
+    <li>PD_Apparel_ExecutionerHelmet</li>
+  </apparelRequired>
+  <forcedTraits>
+    <li><def>Brawler</def></li>
+    <li><def>Tough</def></li>
+  </forcedTraits>
+  <initialResistanceRange>
+    <min>0</min>
+    <max>0</max>
+  </initialResistanceRange>
+  <initialWillRange>
+    <min>0.5</min>
+    <max>0.8</max>
+  </initialWillRange>
+</PawnKindDef>
+
+
+  <!-- Blacktrooper: Ranged Frontline Survivalist -->
+  <PawnKindDef>
+    <defName>PawnKind_HarkonnenBlacktrooper</defName>
+    <label>Blacktrooper Soldier</label>
+    <race>Human</race>
+    <combatPower>220</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_BaronShirt</li>
+      <li>PD_Apparel_BlacktrooperArmor</li>
+      <li>PD_Apparel_BlacktrooperHelmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+  <!-- Scout: Long-Range and Hunting Specialist -->
+  <PawnKindDef>
+    <defName>PawnKind_HarkonnenScout</defName>
+    <label>Scout Operative</label>
+    <race>Human</race>
+    <combatPower>210</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_BaronShirt</li>
+      <li>PD_Apparel_ScoutArmor</li>
+      <li>PD_Apparel_ScoutHelmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Gun</li>
+      <li>Melee</li>
+    </weaponTags>
+    <forcedTraits>
+      <li><def>Kind</def></li>
+    </forcedTraits>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+  <!-- Probe: Tech, Research, Intelligence Operative -->
+  <PawnKindDef>
+    <defName>PawnKind_HarkonnenProbe</defName>
+    <label>Probe Drone</label>
+    <race>Human</race>
+    <combatPower>170</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_BaronShirt</li>
+      <li>PD_Apparel_ProbeArmor</li>
+      <li>PD_Apparel_ProbeHelmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+</Defs>
+
